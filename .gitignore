@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+npm-debug.log*
+.pnp
+.pnp.*
+
+# next.js
+.next/
+out/
+
+# production
+build/
+dist/
+
+# env files (never commit secrets)
+.env*.local
+.env
+
+# typescript
+tsconfig.tsbuildinfo
+
+# testing
+coverage/
+playwright-report/
+test-results/
+
+# misc
+.DS_Store
+*.pem
+.vercel
