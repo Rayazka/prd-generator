@@ -12,9 +12,28 @@ out/
 build/
 dist/
 
-# env files (never commit secrets)
-.env*.local
-.env
+# private project documents and agent configuration
+/.agents/
+/.agentes/
+/docs/
+/.opencode/
+/.claude/
+/.codex/
+/AGENTS.md
+/CLAUDE.md
+/GEMINI.md
+
+# local credentials (keep only the empty configuration template public)
+.env*
+!.env.example
+/.npmrc
+/secrets/
+/credentials/
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
 
 # typescript
 tsconfig.tsbuildinfo
@@ -26,5 +45,11 @@ test-results/
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
 .vercel
+/.vscode/
+/.idea/
+/.history/
+/backups/
+*.bundle
