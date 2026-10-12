@@ -12,7 +12,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "test:db": "vitest run tests/database",
+    "db:start": "supabase start",
+    "db:reset": "supabase db reset --local"
   },
   "repository": {
     "type": "git",
@@ -31,9 +34,12 @@
     "openai": "^7.32.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
+    "server-only": "^0.0.1",
     "zod": "^4.6.6"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@electric-sql/pglite-socket": "^0.2.11",
     "@playwright/test": "^1.64.0",
     "@types/node": "^26.6.5",
     "@types/react": "^19.3.0",
@@ -43,6 +49,7 @@
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.4.0",
     "postcss": "^8.5.29",
+    "supabase": "^2.120.0",
     "tailwindcss": "^3.4.19",
     "typescript": "^6.0.3",
     "vitest": "^5.0.3"

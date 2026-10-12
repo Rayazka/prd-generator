@@ -53,3 +53,4 @@ Thumbs.db
 /.history/
 /backups/
 *.bundle
+.env.local
